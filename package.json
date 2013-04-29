@@ -1,0 +1,29 @@
+{
+    "name": "summary-content",
+    "description": "Get summary of a url based in semantic and social tags",
+    "version": "0.0.0",
+    "homepage": "http://github.com/felquis/summary-content",
+    "author": {
+        "name": "Ofelquis Gimenes",
+        "email": "ofelquis@hotmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/felquis/summary-content.git"
+    },
+    "main": "main.js",
+    "engines": {
+        "node": ">= 0.10.x"
+    },
+    "dependencies": {
+
+    },
+    "devDependencies": {},
+    "keywords": [
+        "summary",
+        "url",
+        "facebook",
+        "content",
+        "resume"
+    ]
+}
