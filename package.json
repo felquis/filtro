@@ -1,7 +1,7 @@
 {
     "name": "node-page-data",
     "description": "Get summary of a url based in semantic and social tags",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "homepage": "http://github.com/felquis/node-page-data",
     "author": {
         "name": "Ofelquis Gimenes",
