@@ -1,30 +1,22 @@
 # node-page-data
-
 Get summary of a url based in semantic and social tags.
 
-## Try yourself
+## Install
+`npm install node-page-data --save`
 
-1. `git clone git@github.com:felquis/node-page-data.git`
-1. `npm install`
-1. `node teste.js`
-
-## You will see:
-![summary-content](https://f.cloud.github.com/assets/736728/442248/f939209e-b141-11e2-8cdf-1a89eb8bc465.png)
-
-## Open `teste.js`
-// teste.js
+## Make a little test
 ```js
-var sc = require('./bin/node-page-data');
+var pageData = require('node-page-data');
 
-var url = sc.summarycontent({
-	url: 'http://www.tutsmais.com.br/blog',
-	onError: function (e) {
-		console.log('Error: ', e);
-	},
+pageData.summarycontent({
+	url: 'http://tutsmais.com.br/blog/',
 	onContent: function (e) {
-		console.log('Success: ', e);
+		console.log('Content: ', e);
 	}
 });
 ```
+### You will see:
+![summary-content](https://f.cloud.github.com/assets/736728/442248/f939209e-b141-11e2-8cdf-1a89eb8bc465.png)
 
-## ;D
+## Contributors
+Feel free to create a [Issue](https://github.com/felquis/node-page-data/issues) to send suggestions and bugs.
