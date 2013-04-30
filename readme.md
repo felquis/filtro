@@ -2,7 +2,7 @@
 
 Get summary of a url based in semantic and social tags.
 
-## Try your self
+## Try yourself
 
 1. `git clone git@github.com:felquis/summary-content.git`
 1. `npm install`
