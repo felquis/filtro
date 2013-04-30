@@ -1,10 +1,10 @@
-# summary-content
+# node-page-data
 
 Get summary of a url based in semantic and social tags.
 
 ## Try yourself
 
-1. `git clone git@github.com:felquis/summary-content.git`
+1. `git clone git@github.com:felquis/node-page-data.git`
 1. `npm install`
 1. `node teste.js`
 
@@ -14,7 +14,7 @@ Get summary of a url based in semantic and social tags.
 ## Open `teste.js`
 // teste.js
 ```js
-var sc = require('./bin/summary-content');
+var sc = require('./bin/node-page-data');
 
 var url = sc.summarycontent({
 	url: 'http://www.tutsmais.com.br/blog',

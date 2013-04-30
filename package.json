@@ -1,15 +1,15 @@
 {
-    "name": "summary-content",
+    "name": "node-page-data",
     "description": "Get summary of a url based in semantic and social tags",
     "version": "0.0.0",
-    "homepage": "http://github.com/felquis/summary-content",
+    "homepage": "http://github.com/felquis/node-page-data",
     "author": {
         "name": "Ofelquis Gimenes",
         "email": "ofelquis@hotmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/felquis/summary-content.git"
+        "url": "git://github.com/felquis/node-page-data.git"
     },
     "main": "main.js",
     "engines": {
