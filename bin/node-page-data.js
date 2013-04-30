@@ -47,17 +47,6 @@ var requestURL = function (opt) {
                 console.log('Hostname not included; get host from requested URL (url.parse()) and prepend to location.'.red);
             }
         } else {
-        /*
-            for (prop in res) {
-                if (typeof res[prop] == "function") {
-                    console.log(prop,' --> '.green);
-                    // console.log(prop,' --> '.green , res[prop]);
-                }
-            }
-
-            console.log('- - - - - - - - - - - - - - - - - - - - - - - '.yellow);
-        */
-
             opt.onStatus(res.statusCode);
             opt.onHeaders(JSON.stringify(res.headers));
 
@@ -79,7 +68,6 @@ var requestURL = function (opt) {
         opt.onError(e.message);
     });
 
-    // write data to request body
     req.write('data\n');
     req.write('data\n');
 }
@@ -92,31 +80,4 @@ exports.summarycontent = function (opt) {
     opt.onError = opt.onError || function () {};
 
     requestURL(opt);
-/*
-    http.get(options.url, function (res) {
-        // Detect a redirect
-        if (res.statusCode > 300 && res.statusCode < 400 && res.headers.location) {
-            // The location for some (most) redirects will only contain the path,  not the hostname;
-            // detect this and add the host to the path.
-            if (url.parse(res.headers.location).hostname) {
-                // Hostname included; make request to res.headers.location
-                console.log('301 request to: ', res.headers.location);
-            } else {
-                console.log('Host not included');
-                // Hostname not included; get host from requested URL (url.parse()) and prepend to location.
-            }
-
-        // Otherwise no redirect; capture the response as normal
-        } else {
-            var data = '';
-
-            res.on('data', function (chunk) {
-                data += chunk;
-
-                parseHTML(data, opt.onContent);
-            }).on('end', function () {
-                // Do something with `data`
-            });
-        }
-    });*/
 }
