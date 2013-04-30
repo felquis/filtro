@@ -2,6 +2,7 @@ var sc = require('./bin/node-page-data');
 
 var url = sc.summarycontent({
 	url: 'http://www.tutsmais.com.br/blog',
+	modules: ['facebook', 'title'],
 	onError: function (e) {
 		console.log('Error: ', e);
 	},
