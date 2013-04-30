@@ -11,7 +11,7 @@
         "type": "git",
         "url": "git://github.com/felquis/node-page-data.git"
     },
-    "main": "main.js",
+    "main": "./bin/node-page-data.js",
     "engines": {
         "node": ">= 0.10.x"
     },
