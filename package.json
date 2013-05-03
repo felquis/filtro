@@ -1,17 +1,17 @@
 {
-    "name": "node-page-data",
+    "name": "filtro",
     "description": "Get summary of a url based in semantic and social tags",
     "version": "0.0.1",
-    "homepage": "http://github.com/felquis/node-page-data",
+    "homepage": "http://github.com/felquis/filtro",
     "author": {
         "name": "Ofelquis Gimenes",
         "email": "ofelquis@hotmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/felquis/node-page-data.git"
+        "url": "git://github.com/felquis/filtro.git"
     },
-    "main": "./bin/node-page-data.js",
+    "main": "./bin/filtro.js",
     "engines": {
         "node": ">= 0.10.x"
     },

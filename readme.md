@@ -1,12 +1,12 @@
-# node-page-data
+# filtro
 Get summary of a url based in semantic and social tags.
 
 ## Install
-`npm install node-page-data --save`
+`npm install filtro --save`
 
 ## Make a little test
 ```js
-var pageData = require('node-page-data');
+var pageData = require('filtro');
 
 pageData.summarycontent({
 	url: 'http://tutsmais.com.br/blog/',
@@ -28,4 +28,4 @@ pageData.summarycontent({
 `onError`: Tregered when have any error.
 
 ## Contributors
-Feel free to create a [Issue](https://github.com/felquis/node-page-data/issues) to send suggestions and bugs.
+Feel free to create a [Issue](https://github.com/felquis/filtro/issues) to send suggestions and bugs.

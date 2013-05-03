@@ -1,4 +1,4 @@
-var sc = require('./bin/node-page-data');
+var sc = require('./bin/filtro');
 
 var url = sc.summarycontent({
 	url: 'http://www.tutsmais.com.br/blog',
