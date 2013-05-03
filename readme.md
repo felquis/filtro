@@ -20,12 +20,12 @@ pageData.summarycontent({
 ![summary-content](https://f.cloud.github.com/assets/736728/442248/f939209e-b141-11e2-8cdf-1a89eb8bc465.png)
 
 # API
-`url`: URL to request.
-`modules`: Array os modules: `['facebook', 'title']`;
+- `url`: URL to request.
+- `modules`: Array os modules: `['facebook', 'title']`;
 
 **events**
-`onContent`: Trigered when your data is complete.
-`onError`: Tregered when have any error.
+- `onContent`: Trigered when your data is complete.
+- `onError`: Tregered when have any error.
 
 ## Contributors
 Feel free to create a [Issue](https://github.com/felquis/filtro/issues) to send suggestions and bugs.
