@@ -32,5 +32,10 @@ pageData({
 - `onContent`: Trigered when your data is complete.
 - `onError`: Tregered when have any error.
 
+# Filtro Modules
+* [Facebook](http://github.com/felquis/filtro-facebook): Returns the Facebook tags data.
+* [Title](http://github.com/felquis/filtro-title): Returns the page title of an URL.
+* [HTML](http://github.com/felquis/filtro-html): Returns the HTML of an URL.
+
 ## Contributors
 Feel free to create a [Issue](https://github.com/felquis/filtro/issues) to send suggestions and bugs.
