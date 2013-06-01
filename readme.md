@@ -1,4 +1,4 @@
-# filtro
+# Filtro
 Catch web pages data, manipulating HTML in the server.
 
 ## Install

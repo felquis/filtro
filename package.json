@@ -1,11 +1,11 @@
 {
     "name": "filtro",
-    "description": "Get summary of a url based in semantic and social tags",
-    "version": "0.0.1",
+    "description": "Catch web pages data, manipulating HTML in the server.",
+    "version": "0.1.0",
     "homepage": "http://github.com/felquis/filtro",
     "author": {
         "name": "Ofelquis Gimenes",
-        "email": "ofelquis@hotmail.com"
+        "email": "frgformenton@gmail.com"
     },
     "repository": {
         "type": "git",
@@ -18,12 +18,15 @@
     "dependencies": {
         "cheerio": "0.11.0",
         "colors": "0.6.0",
+
         "filtro-facebook": "0.0.11",
         "filtro-title": "0.0.1"
     },
     "keywords": [
-        "summary",
+        "get",
         "url",
+        "page",
+        "data",
         "facebook",
         "content",
         "resume",
