@@ -1,16 +1,21 @@
 # filtro
-Get summary of a url based in semantic and social tags.
+Catch web pages data, manipulating HTML in the server.
 
 ## Install
 `npm install filtro --save`
 
 ## Make a little test
-```js
-var pageData = require('filtro');
 
-pageData.summarycontent({
-	url: 'http://tutsmais.com.br/blog/',
-	modules: ['title', 'facebook'],
+1 - Install the module `filtro-facebook` to returns the facebook tags in the page:
+`npm install filtro-facebook --save`
+
+2 - Write a file containing:
+```js
+var pageData = require('filtro').filtro;
+
+pageData({
+	url: 'http://tutsmais.com.br/blog',
+	modules: ['facebook'],
 	onContent: function (e) {
 		console.log('Content: ', e);
 	}
@@ -21,9 +26,9 @@ pageData.summarycontent({
 
 # API
 - `url`: URL to request.
-- `modules`: Array os modules: `['facebook', 'title']`;
+- `modules`: Array of modules to be used: `['facebook', 'title']`, each module will call a Node module, for example `filtro-facebook`, `filtro-title`, `filtro-otherFiltroModule`
 
-**events**
+# events
 - `onContent`: Trigered when your data is complete.
 - `onError`: Tregered when have any error.
 

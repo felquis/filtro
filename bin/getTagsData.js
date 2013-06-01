@@ -1,3 +1,7 @@
+/*
+    Returns the JSON with Filtro page data.
+*/
+
 var isAValidTag = require('./../lib/validTags.js');
 
 module.exports = function (html, opt) {
@@ -11,7 +15,7 @@ module.exports = function (html, opt) {
             // Is Array
             opt.modules.forEach(function (value) {
                 if (isAValidTag(value)) {
-                    result[value] = require('./modules/'+value).returnData(html);
+                    result[value] = require('filtro-'+value).returnData(html);
                 } else {
                     result[value] = {
                         error: true,
@@ -23,7 +27,7 @@ module.exports = function (html, opt) {
             // Is string
             if (typeof(opt.modules) === 'string') {
                 if (isAValidTag(opt.modules)) {
-                    result[opt.modules] = require('./modules/'+opt.modules).returnData(html);
+                    result[opt.modules] = require('filtro'+opt.modules).returnData(html);
                 } else {
                     result[opt.modules] = {
                         error: true,

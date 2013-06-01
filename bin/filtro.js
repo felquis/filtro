@@ -61,7 +61,7 @@ var requestURL = function (opt) {
     req.write('data\n');
 }
 
-exports.summarycontent = function (opt) {
+exports.filtro = function (opt) {
     opt.onStatus = opt.onStatus || function () {};
     opt.onHeaders = opt.onHeaders || function () {};
     opt.onHeaders = opt.onHeaders || function () {};
