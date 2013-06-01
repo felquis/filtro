@@ -1,8 +1,8 @@
 var sc = require('./bin/filtro').filtro;
 
 var url = sc({
-	url: 'http://www.felquis.com/',
-	modules: ['html'],
+	url: 'http://www.tutsmais.com/blog/',
+	modules: ['facebook', 'title'],
 	onError: function (e) {
 		console.log('Error: ', e);
 	},
