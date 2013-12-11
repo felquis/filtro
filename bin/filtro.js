@@ -1,12 +1,12 @@
 var http = require('http');
+var request = require('request');
 var cheerio = require('cheerio');
 var url = require('url');
 var colors = require('colors');
 
 var parseHTML = function (html, callback, opt) {
-    var $ = cheerio.load(html);
-
-    var result = require('./getTagsData.js')($, opt);
+    var $ = cheerio.load(html),
+        result = require('./getTagsData.js')($, opt);
 
     if (result.error) {
         opt.onError(result);
@@ -17,48 +17,22 @@ var parseHTML = function (html, callback, opt) {
 
 var requestURL = function (opt) {
 
-    opt.url = url.parse(opt.url);
-
     var options = {
-        host: opt.url.host || 'www.google.com.br',
-        port: opt.url.port || 80,
-        path: opt.url.path || '/',
-        method: opt.method || 'GET'
+        url: opt.url || 'http://google.com',
+        method: (opt.method || '').toLowerCase() || 'get'
     };
 
-    var req = http.request(options, function(res) {
+    request[options.method](options.url, function (error, response, body) {
+        if (error) {
+            opt.onError(error);
 
-        if (res.statusCode > 300 && res.statusCode < 400 && res.headers.location) {
-            if (url.parse(res.headers.location).hostname) {
-                console.log(opt.url.href.yellow, res.statusCode, ' --> '.cyan , res.headers.location.green);
+            return false;
+        }
 
-                opt.url = res.headers.location;
-                requestURL(opt);
-            } else {
-                console.log('Hostname not included; get host from requested URL (url.parse()) and prepend to location.'.red);
-            }
-        } else {
-            opt.onStatus(res.statusCode);
-            opt.onHeaders(JSON.stringify(res.headers));
-
-            res.setEncoding('utf8');
-
-            var html = '';
-
-            res.on('data', function(chunk) {
-                html += chunk;
-            }).on('end', function () {
-                parseHTML(html, opt.onContent, opt);
-            });
+        if (!error && response.statusCode == 200) {
+            parseHTML(body, opt.onContent, opt);
         }
     });
-
-    req.on('error', function(e) {
-        opt.onError(e.message);
-    });
-
-    req.write('data\n');
-    req.write('data\n');
 }
 
 exports.filtro = function (opt) {

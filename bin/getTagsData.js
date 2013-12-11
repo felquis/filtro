@@ -5,7 +5,7 @@
 var isAValidTag = require('./../lib/validTags.js');
 
 module.exports = function (html, opt) {
-	var result = {};
+    var result = {};
 
     /*
         Verify if we have `tags` property and if it is an `Array` ou `String`
@@ -37,8 +37,8 @@ module.exports = function (html, opt) {
             }
         }
     } else {
-    	result.error = true;
-    	result.errorText = 'You forgot the property `modules`';
+        result.error = true;
+        result.errorText = 'You forgot the property `modules`';
     }
 
     return result;

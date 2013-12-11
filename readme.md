@@ -14,11 +14,11 @@ Catch web pages data, manipulating HTML in the server.
 var pageData = require('filtro').filtro;
 
 pageData({
-	url: 'http://tutsmais.com.br/blog',
-	modules: ['facebook'],
-	onContent: function (e) {
-		console.log('Content: ', e);
-	}
+    url: 'http://tutsmais.com.br/blog',
+    modules: ['facebook'],
+    onContent: function (e) {
+        console.log('Content: ', e);
+    }
 });
 ```
 ### You will see:
