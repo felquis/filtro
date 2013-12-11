@@ -1,7 +1,7 @@
 {
     "name": "filtro",
     "description": "Catch web pages data, manipulating HTML in the server.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "http://github.com/felquis/filtro",
     "author": {
         "name": "Ofelquis Gimenes",
@@ -22,7 +22,7 @@
     },
     "devDependencies": {
         "filtro-facebook": "0.0.11",
-        "filtro-title": "0.0.1",
+        "filtro-title": "0.0.1"
     },
     "keywords": [
         "get",
