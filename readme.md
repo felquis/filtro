@@ -36,6 +36,7 @@ pageData({
 * [Facebook](http://github.com/felquis/filtro-facebook): Returns the Facebook tags data.
 * [Title](http://github.com/felquis/filtro-title): Returns the page title of an URL.
 * [HTML](http://github.com/felquis/filtro-html): Returns the HTML of an URL.
+* [merriam webster](https://github.com/felquis/filtro-merriam-audio): Returns the audios of words from Merriam Webster website
 
 ## Contributors
 Feel free to create a [Issue](https://github.com/felquis/filtro/issues) to send suggestions and bugs.
